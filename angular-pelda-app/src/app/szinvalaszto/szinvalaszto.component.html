@@ -1,0 +1,19 @@
+
+<!-- onsubmit="formSubmitTortent(window.event)" -->
+<form (submit)="formSubmitTortent($event)">
+  <select name="szin">
+    <option value="blue">Kék</option>
+    <option value="red">Piros</option>
+    <option value="green">Zöld</option>
+  </select>
+  <button type="submit">Küldés</button>
+</form>
+
+<!-- background-color: ${kivalasztottSzin} -->
+<div
+  style="width: 100px; height: 100px;"
+  [ngStyle]="{
+    'background-color': kivalasztottSzin
+  }"
+>
+</div>

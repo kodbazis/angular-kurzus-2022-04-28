@@ -7,12 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-  // angular devtools
-  // State
-  xPozicio = 90;
-  yPozicio = 200;
-  mozgatvaVan = true;
+  kivalasztottSzin = "";
 
-
+  szinvalasztasTortent(szin: string) {
+    this.kivalasztottSzin = szin;
+  }
 
 }

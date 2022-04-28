@@ -1,0 +1,17 @@
+<div
+  class="box"
+  style="width: 300px; height: 200px; position: absolute;"
+  [ngClass]="mozgatvaVan ? 'grabbed' : 'not-grabbed'"
+  [ngStyle]="{
+    'left.px': xPozicio,
+    'top.px': yPozicio,
+    'background-color': szin
+  }"
+  (mousedown)="mouseDownEsemenyTortent()"
+  (mouseup)="mouseUpEsemenyTortent()"
+  (mousemove)="mouseMoveTortent($event)"
+>
+  <div class="card-body">
+    <h5 class="card-title display-6"># Mozgatható doboz</h5>
+  </div>
+</div>

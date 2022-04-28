@@ -1,10 +1,8 @@
-<div
-  class="box"
-  style="width: 300px; position: absolute;"
-  [ngClass]="mozgatvaVan ? 'grabbed' : 'not-grabbed'"
+<app-szinvalaszto (ujSzinKivalasztva)="szinvalasztasTortent($event)"></app-szinvalaszto>
 
->
-  <div class="card-body">
-    <h5 class="card-title display-6"># Mozgatható doboz</h5>
-  </div>
-</div>
+<app-doboz [xPozicio]="200" [yPozicio]="10" [szin]="kivalasztottSzin"></app-doboz>
+<app-doboz [xPozicio]="100" [yPozicio]="200" [szin]="kivalasztottSzin"></app-doboz>
+<app-doboz [xPozicio]="300" [yPozicio]="300" [szin]="kivalasztottSzin"></app-doboz>
+<app-doboz [xPozicio]="400" [yPozicio]="450" [szin]="kivalasztottSzin"></app-doboz>
+<app-doboz [xPozicio]="550" [yPozicio]="100" [szin]="kivalasztottSzin"></app-doboz>
+
